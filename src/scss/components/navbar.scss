@@ -6,8 +6,8 @@
 .navbar-top{
     margin-top: 20px;
     padding-bottom: 20px;
-    margin-left: -80px;
-    border-bottom: 1px solid #000000;
+    margin-left: -7.5%;
+    border-bottom: .5px solid #000000;
     font-family: 'DM Sans', sans-serif;
 
    .navbar{
@@ -34,8 +34,11 @@
                     color: black;
                     transition: all 350ms ease;
                     &.navbar-link-logo{
-                        font-size: 30px;
                         cursor: default;
+                        img{
+                            width: 40px;
+                            height: 40px;   
+                        }
                         &:hover{
                             color: black;
                         }
@@ -73,7 +76,10 @@
                 color: black;
                 cursor: default;
                 text-align: center;
-                font-size: 30px;
+                img{
+                    width: 40px;
+                    height: auto;
+                }
             }
             .navbar-nav{
                 display: none;
