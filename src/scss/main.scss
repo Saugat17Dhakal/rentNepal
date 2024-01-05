@@ -1,5 +1,9 @@
-@import "components/navbar.scss";
-@import "components/footer.scss";
-@import "components/slides.scss";
+@import "utilities/resets";
+@import "utilities/variables";
+@import "utilities/fonts";
 
-@import "pages/home_page.scss";
+@import "components/navbar";
+@import "components/footer";
+@import "components/slides";
+
+@import "pages/home_page";

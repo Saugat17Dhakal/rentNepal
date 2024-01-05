@@ -3,36 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>rentNepal</title>
     <link rel="stylesheet" href="/public/css/main.css">
-    <script src="/src/js/main.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Code -->
-    <section class="navbar-top">
-        <div class="navbar">
-            <a href="#" class="logo"><img src="public/img/logo.svg" alt=""></a>
-            <div class="open-close">
-                <img src="public/img/menu.svg" alt="" class="menu-btn open-close-btn active">
-                <img src="public/img/close.svg" alt="" class="close-btn open-close-btn">
-            </div>
-            <navbar class="navbar-nav">
-                <ul class="navbar-list">
-                    <li class="navbar-item"><a href="#" class="navbar-link navbar-link-logo responsive"><img src="public/img/logo.svg" alt=""></a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">About Us</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">QOTW Winners</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link navbar-link-logo"><img src="public/img/logo.svg" alt=""></a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Blog</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Upcoming Projects</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+    <div class="loader">rentNepal</div>
+    <section class="navbar-container">
+        <div class="navbar-top">
+            <nav class="navbar-top-nav">
+                <ul class="navbar-top-nav-list">
+                    <li class="navbar-top-nav-list-item"><a href="#" class="navbar-top-nav-list-item-link">Contribute</a></li>
+                    <li class="navbar-top-nav-list-item"><a href="#" class="navbar-top-nav-list-item-link">Payments and Recharge</a></li>
+                    <li class="navbar-top-nav-list-item"><a href="#" class="navbar-top-nav-list-item-link">Help and Support</a></li>
+                    <li class="navbar-top-nav-list-item"><a href="#" class="navbar-top-nav-list-item-link">Contact</a></li>
+                    <li class="navbar-top-nav-list-item"><a href="#" class="navbar-top-nav-list-item-link">How it Works</a></li>
                 </ul>
-
-            </navbar>
+                <button class="navbar-top-nav-button">
+                    List an Item
+                </button>
+            </nav>
+        </div>
+        <div class="navbar-bottom">
+            <nav class="navbar-bottom-nav">
+                <div class="navbar-bottom-nav-logo-container">
+                    <!-- <img src="" alt="" class="navbar-bottom-nav-logo-container-logo"> -->
+                    <span class="navbar-bottom-nav-logo-container-logo">rentNepal</span>
+                </div>
+                <div class="navbar-bottom-nav-search-box">
+                    <input type="text" placeholder="Search rentNepal...">
+                    <img src="/public/img/search.svg" alt="">
+                </div>
+                <div class="navbar-bottom-nav-login-signup">
+                    <img src="/public/img/user.png" alt="">
+                    <div class="login">
+                        Login
+                    </div>
+                    |
+                    <div class="signup">
+                        Signup
+                    </div>
+                </div>
+                <div class="navbar-bottom-nav-language">
+                    <span>Change Language</span>
+                    <img src="/public/img/chevron-down.png" alt="">
+                    <ul class="navbar-bottom-nav-language-dropdown">
+                        <li class="navbar-bottom-nav-language-dropdown-item"><a href="#" class="navbar-bottom-nav-language-dropdown-item-link">English</a></li>
+                        <li class="navbar-bottom-nav-language-dropdown-item"><a href="#" class="navbar-bottom-nav-language-dropdown-item-link">Nepali</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-bottom-nav-darkmode">
+                    Turn on Dark Mode
+                </div>
+            </nav>
         </div>
     </section>
+    <section class="hero-section">
+        <div class="slider">
+            <div class="slider-length-specifier">
+                <span class="currentSlideDisplay">1</span>
+                /
+                <span class="totalSlideDisplay">4</span>
+            </div>
+            <div class="prev-next-btn">
+                <button class="prev">
+                    <img src="/public/img/chevron-left.png" alt="">
+                </button>
+                <button class="next">
+                    <img src="/public/img/chevron-right.png" alt="">
+                </button>
+            </div>
+            <div class="slider-images">
+                <img src="/public/img/slider_pic_one.jpg" class="slide" alt="">
+                <img src="/public/img/slider_pic_two.jpg" class="slide" alt="">
+                <img src="/public/img/slider_pic_three.jpg" class="slide" alt="">
+                <img src="/public/img/slider_pic_four.jpg" class="slide" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="ad-display-section">
+        <h1>
+            Our Partners
+        </h1>
+        <div class="logo-section">
+            <img src="/public/img/daraz.jpg" alt="" class="logo-section-logo">
+            <img src="/public/img/pathao.png" alt="" class="logo-section-logo">
+            <img src="/public/img/indrive.png" alt="" class="logo-section-logo">
+            <img src="/public/img/worldlink.png" alt="" class="logo-section-logo">
+            <img src="/public/img/foodmandu.jpg" alt="" class="logo-section-logo">
+        </div>
+    </section>
+    <section class="newest-launched-product">
+        <div class="newest-launched-product-navigation">
+            <h1>
+                Trending Products!
+            </h1>
+            <a href="#" class="shop-more">
+                Shop More!
+            </a>
+        </div>
+        <div class="newest-launched-product-cards">
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/first-product.jpg" alt="">
+                <a href="#" class="product-name">Portable Mini Bluetooth Speaker WS887
+                </a>
+                <span class="product-price">Rs. 340</span>
+                <span class="product-discount"> <s>Rs. 999</s> -66% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/second-product.jpg" alt="">
+                <a href="#" class="product-name">Foldable And Portable Laptop Table Stand/Study Table/Bed Table/Ergonomic & Rounded Edges/Non-Slip Legs/Engineered
+                </a>
+                <span class="product-price">Rs. 899</span>
+                <span class="product-discount"> <s>Rs. 900</s></span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/third-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    Aitnt Biagji Gaming Mouse With RGB LED   
+                </a>
+                <span class="product-price">Rs. 196</span>
+                <span class="product-discount"> <s>Rs. 399</s> -15%</span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fourth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    boAt ENIGMA X400 | Bluetooth Calling Smartwatch |1.45" AMOLED Display |
+                </a>
+                <span class="product-price">Rs. 6,599</span>
+                <span class="product-discount"> <s>Rs. 9,000</s> -27% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fifth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    AirForce Laced Up Interlocked Comfortable Stylish Sneaker Shoes For Men By Jutta Ghar Nepal (Multicolour)
+                </a>
+                <span class="product-price">Rs. 1,349</span>
+                <span class="product-discount"> <s>Rs. 3,200</s> -58% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/sixth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    F5 Power Socket 2500W Multiplug With 4 Socket, 2 USB Port, 1 Type C Port
+                </a>
+                <span class="product-price">Rs. 599</span>
+                <span class="product-discount"> <s>Rs. 999</s> -40% </span>
+            </div>
+        </div>
+        
+    </section>
+    <section class="newest-launched-product">
+        <div class="newest-launched-product-navigation">
+            <h1>
+                Rent Cars!
+            </h1>
+            <a href="#" class="shop-more">
+                Shop More!
+            </a>
+        </div>
+        <div class="newest-launched-product-cards">
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/first-product.jpg" alt="">
+                <a href="#" class="product-name">Portable Mini Bluetooth Speaker WS887
+                </a>
+                <span class="product-price">Rs. 340</span>
+                <span class="product-discount"> <s>Rs. 999</s> -66% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/second-product.jpg" alt="">
+                <a href="#" class="product-name">Foldable And Portable Laptop Table Stand/Study Table/Bed Table/Ergonomic & Rounded Edges/Non-Slip Legs/Engineered
+                </a>
+                <span class="product-price">Rs. 899</span>
+                <span class="product-discount"> <s>Rs. 900</s></span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/third-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    Aitnt Biagji Gaming Mouse With RGB LED   
+                </a>
+                <span class="product-price">Rs. 196</span>
+                <span class="product-discount"> <s>Rs. 399</s> -15%</span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fourth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    boAt ENIGMA X400 | Bluetooth Calling Smartwatch |1.45" AMOLED Display |
+                </a>
+                <span class="product-price">Rs. 6,599</span>
+                <span class="product-discount"> <s>Rs. 9,000</s> -27% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fifth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    AirForce Laced Up Interlocked Comfortable Stylish Sneaker Shoes For Men By Jutta Ghar Nepal (Multicolour)
+                </a>
+                <span class="product-price">Rs. 1,349</span>
+                <span class="product-discount"> <s>Rs. 3,200</s> -58% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/sixth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    F5 Power Socket 2500W Multiplug With 4 Socket, 2 USB Port, 1 Type C Port
+                </a>
+                <span class="product-price">Rs. 599</span>
+                <span class="product-discount"> <s>Rs. 999</s> -40% </span>
+            </div>
+        </div>
+        
+    </section>
+    <section class="newest-launched-product">
+        <div class="newest-launched-product-navigation">
+            <h1>
+                Best Value in Real Estate!
+            </h1>
+            <a href="#" class="shop-more">
+                Shop More!
+            </a>
+        </div>
+        <div class="newest-launched-product-cards">
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/first-product.jpg" alt="">
+                <a href="#" class="product-name">Portable Mini Bluetooth Speaker WS887
+                </a>
+                <span class="product-price">Rs. 340</span>
+                <span class="product-discount"> <s>Rs. 999</s> -66% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/second-product.jpg" alt="">
+                <a href="#" class="product-name">Foldable And Portable Laptop Table Stand/Study Table/Bed Table/Ergonomic & Rounded Edges/Non-Slip Legs/Engineered
+                </a>
+                <span class="product-price">Rs. 899</span>
+                <span class="product-discount"> <s>Rs. 900</s></span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/third-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    Aitnt Biagji Gaming Mouse With RGB LED   
+                </a>
+                <span class="product-price">Rs. 196</span>
+                <span class="product-discount"> <s>Rs. 399</s> -15%</span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fourth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    boAt ENIGMA X400 | Bluetooth Calling Smartwatch |1.45" AMOLED Display |
+                </a>
+                <span class="product-price">Rs. 6,599</span>
+                <span class="product-discount"> <s>Rs. 9,000</s> -27% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fifth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    AirForce Laced Up Interlocked Comfortable Stylish Sneaker Shoes For Men By Jutta Ghar Nepal (Multicolour)
+                </a>
+                <span class="product-price">Rs. 1,349</span>
+                <span class="product-discount"> <s>Rs. 3,200</s> -58% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/sixth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    F5 Power Socket 2500W Multiplug With 4 Socket, 2 USB Port, 1 Type C Port
+                </a>
+                <span class="product-price">Rs. 599</span>
+                <span class="product-discount"> <s>Rs. 999</s> -40% </span>
+            </div>
+        </div>
+        
+    </section>
+    <section class="newest-launched-product">
+        <div class="newest-launched-product-navigation">
+            <h1>
+                Newest in Fashion!
+            </h1>
+            <a href="#" class="shop-more">
+                Shop More!
+            </a>
+        </div>
+        <div class="newest-launched-product-cards">
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/first-product.jpg" alt="">
+                <a href="#" class="product-name">Portable Mini Bluetooth Speaker WS887
+                </a>
+                <span class="product-price">Rs. 340</span>
+                <span class="product-discount"> <s>Rs. 999</s> -66% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/second-product.jpg" alt="">
+                <a href="#" class="product-name">Foldable And Portable Laptop Table Stand/Study Table/Bed Table/Ergonomic & Rounded Edges/Non-Slip Legs/Engineered
+                </a>
+                <span class="product-price">Rs. 899</span>
+                <span class="product-discount"> <s>Rs. 900</s></span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/third-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    Aitnt Biagji Gaming Mouse With RGB LED   
+                </a>
+                <span class="product-price">Rs. 196</span>
+                <span class="product-discount"> <s>Rs. 399</s> -15%</span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fourth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    boAt ENIGMA X400 | Bluetooth Calling Smartwatch |1.45" AMOLED Display |
+                </a>
+                <span class="product-price">Rs. 6,599</span>
+                <span class="product-discount"> <s>Rs. 9,000</s> -27% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fifth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    AirForce Laced Up Interlocked Comfortable Stylish Sneaker Shoes For Men By Jutta Ghar Nepal (Multicolour)
+                </a>
+                <span class="product-price">Rs. 1,349</span>
+                <span class="product-discount"> <s>Rs. 3,200</s> -58% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/sixth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    F5 Power Socket 2500W Multiplug With 4 Socket, 2 USB Port, 1 Type C Port
+                </a>
+                <span class="product-price">Rs. 599</span>
+                <span class="product-discount"> <s>Rs. 999</s> -40% </span>
+            </div>
+        </div>
+        
+    </section>
+    <section class="newest-launched-product">
+        <div class="newest-launched-product-navigation">
+            <h1>
+                Newest Trekking Equipments!
+            </h1>
+            <a href="#" class="shop-more">
+                Shop More!
+            </a>
+        </div>
+        <div class="newest-launched-product-cards">
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/first-product.jpg" alt="">
+                <a href="#" class="product-name">Portable Mini Bluetooth Speaker WS887
+                </a>
+                <span class="product-price">Rs. 340</span>
+                <span class="product-discount"> <s>Rs. 999</s> -66% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/second-product.jpg" alt="">
+                <a href="#" class="product-name">Foldable And Portable Laptop Table Stand/Study Table/Bed Table/Ergonomic & Rounded Edges/Non-Slip Legs/Engineered
+                </a>
+                <span class="product-price">Rs. 899</span>
+                <span class="product-discount"> <s>Rs. 900</s></span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/third-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    Aitnt Biagji Gaming Mouse With RGB LED   
+                </a>
+                <span class="product-price">Rs. 196</span>
+                <span class="product-discount"> <s>Rs. 399</s> -15%</span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fourth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    boAt ENIGMA X400 | Bluetooth Calling Smartwatch |1.45" AMOLED Display |
+                </a>
+                <span class="product-price">Rs. 6,599</span>
+                <span class="product-discount"> <s>Rs. 9,000</s> -27% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/fifth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    AirForce Laced Up Interlocked Comfortable Stylish Sneaker Shoes For Men By Jutta Ghar Nepal (Multicolour)
+                </a>
+                <span class="product-price">Rs. 1,349</span>
+                <span class="product-discount"> <s>Rs. 3,200</s> -58% </span>
+            </div>
+            <div class="newest-launched-product-cards-card">
+                <img src="/public/img/sixth-product.jpg" alt="">
+                <a href="#" class="product-name">
+                    F5 Power Socket 2500W Multiplug With 4 Socket, 2 USB Port, 1 Type C Port
+                </a>
+                <span class="product-price">Rs. 599</span>
+                <span class="product-discount"> <s>Rs. 999</s> -40% </span>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column footer-column-1">
+                <span class="footer-column-title">
+                    Get to Know Us
+                </span>
+                <ul class="footer-column-list">
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Careers</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Blog</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">About rentNepal</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column-2">
+                <span class="footer-column-title">
+                    Make Money with Us
+                </span>
+                <ul class="footer-column-list">
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Rent Products on rentNepal</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Become a Deliverer</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Invest</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column-3">
+                <span class="footer-column-title">
+                    rentNepal Payment Products
+                </span>
+                <ul class="footer-column-list">
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">GiftCards</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Credits</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column-4">
+                <span class="footer-column-title">
+                    Let us Help You
+                </span>
+                <ul class="footer-column-list">
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Customer Service</a></li>
+                    <li class="footer-column-list-item"><a href="#" class="footer-column-list-item-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="mwl">Made with ❤️ by rentNepal, Copyright 2023.</span>
+        
+    </footer>
+    <script src="/public/js/main.js" defer></script>
 </body>
 </html>
