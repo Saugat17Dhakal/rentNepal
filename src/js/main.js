@@ -1,8 +1,3 @@
-//LOADER
-window.onload = () => {
-    const preloader = document.querySelector(".loader")
-    preloader.classList.add("load-finish")
-}
 // NAVBAR DROPDOWN
     const navBarBottomNavLanguageDropdownOpener = document.querySelector(".navbar-bottom-nav-language")
     const navBarBottomNavLanguageDropdown = document.querySelector(".navbar-bottom-nav-language-dropdown");
@@ -15,6 +10,7 @@ const changeColor = document.querySelector('.navbar-bottom-nav-darkmode')
 const currentTheme = localStorage.getItem('currentTheme')
 if(currentTheme){
     document.body.classList.add('darkmode')
+    changeColor.innerHTML = `Turn off dark mode`
 }
 changeColor.onclick = () => {
     document.body.classList.toggle('darkmode')
@@ -27,3 +23,4 @@ changeColor.onclick = () => {
             changeColor.innerHTML = `Turn on dark mode`
     }
 }
+// SIDEBAR SCROLL BEHAVIOR

@@ -40,7 +40,7 @@ setInterval( () => {
             slider.style.transform = `translateX(${-(currentSlide) * 100}%)`
             currentSlideDisplay.innerHTML = `${currentSlide + 1}`
         }
-}, 2000)
+}, 3000)
 
 currentSlideDisplay.innerHTML = `${currentSlide + 1}`
 totalSlideDisplay.innerHTML = `${sliderImages.length}`   

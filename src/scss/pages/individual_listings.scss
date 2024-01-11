@@ -1,0 +1,180 @@
+.main-content{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'sidebar content'
+    ;
+    position: relative;
+    .display-content{
+        grid-area: content;
+    }
+    .individual-listings{
+        grid-area: header;
+    }
+    .sidebar-container{
+        grid-area: sidebar;
+    }
+}
+.display-content{
+    position: relative;
+    margin-left: 320px;
+    margin-top: 100px;
+    .navigation{
+        .prev{
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 30px;
+            cursor: pointer;
+            background-color: var(--white);
+            border-radius: 20px;
+            img{
+                padding: 5px 7px;
+                width: 25px;
+                height: auto;
+            }
+        }
+        .next{
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 900px;
+            cursor: pointer;
+            box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.2);
+            background-color: var(--white);
+            border-radius: 20px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            img{
+                padding: 5px 7px;
+                width: 25px;
+                height: auto;
+            }
+        }
+    }
+    .trending-products{
+        padding: 0 20px;
+        &-top{
+            display: flex;
+        }
+        
+        &-heading{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 30px;
+        }
+        &-cards{
+            display: flex;
+            overflow-x: hidden;
+            margin-right: 20px;
+            &-card{
+                border: 0.2px solid rgba($color: #000000, $alpha: 0.2);
+                height: 100%;
+                width: 200px;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 20px;
+                transition: all 350ms ease;
+                font-family: 'DM Sans', sans-serif;
+                transition: all 350ms ease;
+                &:hover{
+                    box-shadow: 10px 10px 15px rgba($color: #000000, $alpha: 0.3);
+                }
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+                a{
+                    text-decoration: none;
+                    color: var(--primary);
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.additional-browse-products{
+    margin-left: 340px;
+    // margin-top: 50px;
+    width: 700px;
+    &-heading{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 30px;
+    }
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &-card{
+            display: flex;
+            border: 0.5px solid rgba($color: #000000, $alpha: 0.1);
+            border-radius: 10px;
+            padding: 10px 30px;
+            box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.3);
+            gap: 20px;
+            &-image{
+                img{
+                    width: 250px;
+                    height: auto;
+                }
+            }
+            &-text{
+                font-family: 'DM Sans', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                &-tag{
+                    span{
+                        padding: 5px;
+                        background-color: var(--light);
+                        display: inline-block;
+                        border-radius: 20px;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }   
+                }
+                &-heading{
+                    font-size: 24px;
+                    font-weight: bold;
+                    white-space: initial;
+                    color: var(--dark);
+                    text-decoration: none;
+                }
+                &-original{
+                    font-size: 12px;
+                }
+                &-discounted{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: var(--dark);
+                }
+                &-offer{
+                    font-size: 12px;
+                }
+                &-button{
+                    background: none;
+                    outline: none;
+                    border: none;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: bold;
+                    color: #ffffff;
+                    background-color: var(--primary);
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
